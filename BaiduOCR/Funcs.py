@@ -58,24 +58,24 @@ def get_image_arry(image_path):
 
         # 通用文字识别 500次/天免费
         # 如果有可选参数
-        options = {"language_type": "CHN_ENG", "detect_direction": "false", "detect_language": "false",
-                   "probability": "true"}
         # 带参数调用通用文字识别, 图片参数为本地图片
-        get_txt = client.basicGeneral(img, options)
+        # options = {"language_type": "CHN_ENG", "detect_direction": "false", "detect_language": "false",
+        #            "probability": "true"}
+        # get_txt = client.basicGeneral(img, options)
 
         # 调用通用文字识别, 图片参数为本地图片
-        # get_result = client.basicGeneral(img)
+        # get_txt = client.basicGeneral(img)
 
+        # 调用通用文字识别, 图片参数为网络图片
         # url = ''
         # client.basicGeneral(url)
         # options = {"language_type": "CHN_ENG", "detect_direction": "true", "detect_language": "true", "probability": "true"}
-        # get_result = client.basicGeneral(img, options)
+        # get_txt = client.basicGeneral(img, options)
 
         # 调用通用文字识别（高精度版） 50次/天免费
-        # get_result = client.basicAccurate(img);
-
-        # options = {"detect_direction": "true", "probability": "true"}
-        # get_result = client.basicAccurate(img, options)
+        # get_txt = client.basicAccurate(img);
+        options = {"detect_direction": "true", "probability": "true"}
+        get_txt = client.basicAccurate(img, options)
 
         get_result = get_txt.get('words_result')
         result_len = len(get_result)
@@ -83,9 +83,15 @@ def get_image_arry(image_path):
         for i in range(0, result_len):
             result_arry[i] = get_result[i].get('words')
         while len(result_arry) > 4:
+            print(result_arry)
             result_arry[0] += result_arry[1]
             result_arry.remove(result_arry[1])
-        result_arry[0] = result_arry[0][result_arry[0].index('.') + 1:]
+        if result_arry[0].count('.') > 0:
+            point_index = result_arry[0].index('.')
+            if point_index == 1 or point_index == 2:
+                result_arry[0] = result_arry[0][result_arry[0].index('.') + 1:]
+        else:
+            result_arry[0] = result_arry[0][1:]
         return result_arry
 
 
