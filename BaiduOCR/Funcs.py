@@ -7,8 +7,6 @@ Pillow（Python库 - 图片裁剪工具）
 """
 import os
 import webbrowser
-import ssl
-import sys
 
 from aip.ocr import AipOcr
 from PIL import Image
@@ -83,7 +81,7 @@ def get_image_arry(image_path):
         for i in range(0, result_len):
             result_arry[i] = get_result[i].get('words')
         while len(result_arry) > 4:
-            print(result_arry)
+            # print(result_arry)
             result_arry[0] += result_arry[1]
             result_arry.remove(result_arry[1])
         if result_arry[0].count('.') > 0:
@@ -121,6 +119,9 @@ def use_web_search(ques_txt):
 
 # 问题搜索并返回统计结果
 def ques_search(ques_txt):
+    # ses = {'baidu': f'http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=',
+    #        'google': f'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q='}
+    # search_url = ses.get(search_engine) + quote(ques_txt[0])
     search_url = f'http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=' \
                  + quote(ques_txt[0])
     headers = {
@@ -130,12 +131,28 @@ def ques_search(ques_txt):
     }
     req = request.Request(search_url, headers=headers)
     page_data = request.urlopen(req).read().decode('utf-8')
-    # if len(ques_txt) < 4:
-    #     return '未识别问题···'
     sr = ques_txt[0]
     for i in range(1, len(ques_txt)):
         sr += f'\n{ques_txt[i]}: {page_data.count(ques_txt[i])}'
     return sr
+
+
+# 根据选项统计分析问题关键字
+def option_search(ques_txt):
+    sr = ''
+    for i in range(1, len(ques_txt)):
+        search_url = f'http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=' \
+                 + quote(ques_txt[i])
+        headers = {
+            'User-Agent': r'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          r'Chrome/64.0.3282.119 Safari/537.36',
+            'Referer': search_url
+        }
+        req = request.Request(search_url, headers=headers)
+        page_data = request.urlopen(req).read().decode('utf-8')
+        sr += f'\n{ques_txt[i]}: {page_data.count(ques_txt[0])}'
+    return sr
+
 
 
 
