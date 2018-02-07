@@ -68,7 +68,10 @@ def get_image_arry(image_path):
         # 调用通用文字识别, 图片参数为网络图片
         # url = ''
         # client.basicGeneral(url)
-        # options = {"language_type": "CHN_ENG", "detect_direction": "true", "detect_language": "true", "probability": "true"}
+        # options = {"language_type": "CHN_ENG",
+        #            "detect_direction": "true",
+        #            "detect_language": "true",
+        #            "probability": "true"}
         # get_txt = client.basicGeneral(img, options)
 
         # 调用通用文字识别（高精度版） 50次/天免费
@@ -107,8 +110,8 @@ def get_access_token():
 
 
 # 问题关键要素提取
-def get_key(access_token, ques_txt):
-    url = f'https://aip.baidubce.com/rpc/2.0/nlp/v1/lexer?access_token={access_token}&'
+# def get_key(access_token, ques_txt):
+#     url = f'https://aip.baidubce.com/rpc/2.0/nlp/v1/lexer?access_token={access_token}&'
 
 
 # 用浏览器搜索关键字
@@ -153,7 +156,3 @@ def option_search(ques_txt):
         page_data = request.urlopen(req).read().decode('utf-8')
         sr += f'\n{ques_txt[i]}: {page_data.count(ques_txt[0])}'
     return sr
-
-
-
-
