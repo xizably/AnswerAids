@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6932aa1-fd37-4e07-8c3c-3d7060336346" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BaiduOCR/DevPlan" afterPath="$PROJECT_DIR$/BaiduOCR/DevPlan" />
-      <change beforePath="$PROJECT_DIR$/BaiduOCR/Funcs.py" afterPath="$PROJECT_DIR$/BaiduOCR/Funcs.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +31,8 @@
       <file leaf-file-name="DevPlan" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaiduOCR/DevPlan">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -228,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517965854451</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="创建新分支">
+      <created>1517970326468</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1517970326468</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -295,7 +299,8 @@
     <MESSAGE value="新增计划说明；" />
     <MESSAGE value="代码清理" />
     <MESSAGE value="图片剪切修改为按照比例剪切，该功能针对不同分辨率的手机待测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片剪切修改为按照比例剪切，该功能针对不同分辨率的手机待测试" />
+    <MESSAGE value="创建新分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建新分支" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BaiduOCR/DevPlan">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
