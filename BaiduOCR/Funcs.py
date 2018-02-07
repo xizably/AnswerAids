@@ -39,10 +39,11 @@ def crop_img(img_name, save_name):
     # img_new = img.convert('L')
     img_new = img.convert('P')
     img_new_rgb = img_new.convert('RGB')
-    x = 40
-    y = 175
-    w = 460
-    h = 445
+    img_size_x, img_size_y = img.size
+    x = int(2 / 27 * img_size_x)
+    y = int(35 / 192 * img_size_y)
+    w = int(23 / 27 * img_size_x)
+    h = int(89 / 192 * img_size_y)
     region = img_new_rgb.crop((x, y, x + w, y + h))
     region.save(save_name, 'jpeg')
     img.close()
