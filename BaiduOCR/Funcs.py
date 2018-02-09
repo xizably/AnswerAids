@@ -9,7 +9,9 @@ import os
 import webbrowser
 
 from aip.ocr import AipOcr
+from aip import AipNlp
 from PIL import Image
+from urllib import parse
 from urllib import request
 from urllib.parse import quote
 
@@ -49,7 +51,7 @@ def crop_img(img_name, save_name):
     img.close()
 
 
-# 识别图片中的文字
+# 视觉技术 - 识别图片中的文字
 def get_image_arry(image_path):
     with open(image_path, 'rb') as fp:
         img = fp.read()
@@ -97,21 +99,11 @@ def get_image_arry(image_path):
         return result_arry
 
 
-# 获取百度API的access_token
-def get_access_token():
-    host = f'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&' \
-           f'client_id={NLA_API_KEY}&client_secret={NLA_SECRET_KEY}'
-    req = request.Request(host)
-    req.add_header('Content-Type', 'application/json; charset=UTF-8')
-    req.add_header('User-Agent', r'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                                 r'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36')
-    access_token = request.urlopen(req).read()
-    return access_token
-
-
-# 问题关键要素提取
-# def get_key(access_token, ques_txt):
-#     url = f'https://aip.baidubce.com/rpc/2.0/nlp/v1/lexer?access_token={access_token}&'
+# 词法分析 - 问题关键要素提取
+def speech_analysis(ques_txt):
+    client = AipNlp(NLA_APP_ID, NLA_API_KEY, NLA_SECRET_KEY)
+    key_txt = client.lexer(ques_txt)
+    return key_txt
 
 
 # 用浏览器搜索关键字
