@@ -10,8 +10,9 @@ crop_img(imgName, saveName)
 #     crop_img(f'xg0{i}.png')
 
 ques_txt = get_image_arry(saveName)
+print(ques_txt)
 
-# print(speech_analysis(ques_txt[0]))
+print(speech_analysis(ques_txt[0]))
 
 # print(ques_search(ques_txt))
 # print(option_search(ques_txt))

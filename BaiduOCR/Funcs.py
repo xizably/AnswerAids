@@ -103,7 +103,17 @@ def get_image_arry(image_path):
 def speech_analysis(ques_txt):
     client = AipNlp(NLA_APP_ID, NLA_API_KEY, NLA_SECRET_KEY)
     key_txt = client.lexer(ques_txt)
-    return key_txt
+    words = key_txt.get('items')
+    keys_txt = []
+    # print(words)
+    for word in words:
+        word_type = word.get('pos')
+        if word_type not in ('w', 'u', 'r', 'v', 'p', 'd'):
+            kst = word.get('item')
+            keys_txt.append(kst)
+        else:
+            continue
+    return keys_txt
 
 
 # 用浏览器搜索关键字
@@ -134,17 +144,4 @@ def ques_search(ques_txt):
 
 
 # 根据选项统计分析问题关键字
-def option_search(ques_txt):
-    sr = ''
-    for i in range(1, len(ques_txt)):
-        search_url = f'http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=' \
-                 + quote(ques_txt[i])
-        headers = {
-            'User-Agent': r'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                          r'Chrome/64.0.3282.119 Safari/537.36',
-            'Referer': search_url
-        }
-        req = request.Request(search_url, headers=headers)
-        page_data = request.urlopen(req).read().decode('utf-8')
-        sr += f'\n{ques_txt[i]}: {page_data.count(ques_txt[0])}'
-    return sr
+

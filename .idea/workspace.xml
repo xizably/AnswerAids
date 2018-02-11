@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6932aa1-fd37-4e07-8c3c-3d7060336346" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiduOCR/DevPlan" beforeDir="false" afterPath="$PROJECT_DIR$/BaiduOCR/DevPlan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaiduOCR/Funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiduOCR/Funcs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiduOCR/xg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/BaiduOCR/xg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiduOCR/xg_crop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/BaiduOCR/xg_crop.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,30 +14,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AnswerAids$GetQuesTxt.coverage" NAME="GetQuesTxt Coverage Results" MODIFIED="1518164381403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaiduOCR" />
+    <SUITE FILE_PATH="coverage/AnswerAids$GetQuesTxt.coverage" NAME="GetQuesTxt Coverage Results" MODIFIED="1518336941145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaiduOCR" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Funcs.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Funcs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaiduOCR/Funcs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="102" column="19" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="177">
+              <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
               <folding>
                 <element signature="e#126#135#0" expanded="true" />
-                <element signature="e#614#798#0" />
-                <element signature="e#849#1291#0" />
-                <element signature="e#1341#3054#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetQuesTxt.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetQuesTxt.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="252">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -72,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/BaiduOCR/JsonObject.py" />
         <option value="$PROJECT_DIR$/BaiduOCR/DevPlan" />
-        <option value="$PROJECT_DIR$/BaiduOCR/Funcs.py" />
         <option value="$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py" />
+        <option value="$PROJECT_DIR$/BaiduOCR/Funcs.py" />
       </list>
     </option>
   </component>
@@ -228,19 +222,33 @@
       <option name="project" value="LOCAL" />
       <updated>1517971157577</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新增词义分析">
+      <created>1518166883316</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518166883316</updated>
+    </task>
+    <task id="LOCAL-00010" summary="新增词义分析">
+      <created>1518166894667</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1518166894667</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5079957" side_tool="true" visible="true" weight="0.41233766" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50852877" side_tool="true" visible="true" weight="0.41233766" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49946696" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49200428" visible="true" weight="0.41233766" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" visible="true" weight="0.41233766" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1433902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07622601" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -248,12 +256,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +305,8 @@
     <MESSAGE value="图片剪切修改为按照比例剪切，该功能针对不同分辨率的手机待测试" />
     <MESSAGE value="创建新分支" />
     <MESSAGE value="PC版定型" />
-    <option name="LAST_COMMIT_MESSAGE" value="PC版定型" />
+    <MESSAGE value="新增词义分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增词义分析" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -310,9 +319,22 @@
         <state>
           <folding>
             <element signature="e#126#135#0" expanded="true" />
-            <element signature="e#614#798#0" />
-            <element signature="e#849#1291#0" />
-            <element signature="e#1341#3054#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiduOCR/Funcs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#126#135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -437,23 +459,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaiduOCR/Funcs.py">
+    <entry file="file://$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="19" />
-          <folding>
-            <element signature="e#126#135#0" expanded="true" />
-            <element signature="e#614#798#0" />
-            <element signature="e#849#1291#0" />
-            <element signature="e#1341#3054#0" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaiduOCR/GetQuesTxt.py">
+    <entry file="file://$PROJECT_DIR$/BaiduOCR/Funcs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="177">
+          <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+          <folding>
+            <element signature="e#126#135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
